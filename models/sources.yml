@@ -1,0 +1,23 @@
+version: 2
+
+
+sources:
+  - name: netflix_movielens
+    schema: RAW
+    tables:
+      - name: r_movies
+        identifiers: RAW_MOVIES
+      - name: r_ratings
+        identifiers: RAW_RATINGS
+      - name: r_tags
+        identifiers: RAW_TAGS
+      - name: r_links
+        identifiers: RAW_LINKS
+      - name: r_tags
+        identifiers: RAW_TAGS
+      - name: r_links
+        identifiers: RAW_LINKS
+      - name: r_genome_tags
+        identifiers: RAW_GENOME_TAGS
+      - name: r_genome_scores
+        identifiers: RAW_GENOME_SCORES
