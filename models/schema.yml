@@ -1,0 +1,16 @@
+models:
+  - name: dim_movies
+    description: "Dimension table for cleaned movie metadata."
+    columns:
+      - name: movie_id
+        description: "Primary key for the movie."
+        tests:
+          - not_null
+      - name: movie_title
+        description: "standardized title of the movie."
+        tests:
+          - not_null
+      - name: genre_array
+        description: "List of genres in array format"
+      - name: genres
+        description: "Raw genre string from the sources."
